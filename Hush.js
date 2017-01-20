@@ -1,13 +1,16 @@
-//implict 
+//practice wrting code with good comments
+var a = 42;
 
-a = 42;
+/*
+line 1 
+line 2, can appear anywhere 
+even in a middle of a statement 
+if you wanted 
+*/
 
-a = a/2;
+var b = 12;
 
-a = a+ "";
 
-console.log(a);
+//comments should never say what 
+//a comment says why and or how not the what
 
-//this will print out a string ,
-//js behind the screen will convert
-// a to a string to perform the  calculation
