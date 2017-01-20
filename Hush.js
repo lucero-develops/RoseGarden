@@ -17,11 +17,17 @@ for ( a =5; a < 10 ; a = a + 1){
 /* this for loop will start a at the value 5 
 and each time the loop finished its going 
 to update a by 1 and if a is less than 10 its going to
-do the loop again and again */
+do the loop again and again 
 
+Now lets recreate this in a while loop
+*/
 
-for (;;){}
+a = 5;
+while (true){
+	if (a >= 10){
+		break;
+	}
+	console.log(a)
+	a = a+1;
+}
 
-/* this loop will run forever but it doesnt run forever because
-the conditional is always true , its runs forever because there is 
-no conditional that fails to stop it running */
