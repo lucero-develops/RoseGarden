@@ -1,9 +1,8 @@
-//
-//console.log() a very simple way to
-//print out some messages 
+a =2 is an assignment expression
+the result of that is the valued is was
+assigned.
 
+the Java script engine just does an assignment
 
-var a = 2;
-console.log(a);
+Console does that and says whatever the value is 
 
-2
