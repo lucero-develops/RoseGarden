@@ -1,16 +1,22 @@
-//practice wrting code with good comments
-var a = 42;
+a = 42;
 
-/*
-line 1 
-line 2, can appear anywhere 
-even in a middle of a statement 
-if you wanted 
-*/
+//your assigning to a variable that has never been foramlly 
+//declared , this is a really bad idea 
+// every variable you use in your program should been formally
+//declared before the first time you use it 
 
-var b = 12;
+// var a;
+// a = 42;
+// same as 
+
+var a = 42; 
+//dont houst,  var is function scooping defs
+
+//block scooping definantions
+let b = 2;
+const c = 43;
 
 
-//comments should never say what 
-//a comment says why and or how not the what
+function a(){}
 
+//These are the four ways to declare variable
