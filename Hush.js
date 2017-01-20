@@ -1,15 +1,32 @@
-//number
-42;
+ a = 42;
 
-//string
-//what we do input and output with
-"42" [0]; // "4";
+ console.log(a);
 
-// the value look the same , but 
-//they behave differently in JS
-//becauuse they are of different types 
+ b= "42";
 
-// using quotes expresses your going to use
-//the value in a string way ,  they can 
-//be single or double quotes , it doesn't matter
-//just dont mix single and double quotes 
+ console.log(b);
+
+ //both a and b will print the same out in the 
+ //console but A with be printed in blue 
+ //and b will be printed in black
+
+ //console is giving you a hint its dealing with a 
+ //different value type 
+
+ alert(42);
+ //this changes the value to a string 
+ //so it can print it in the pop up box 
+
+ c = 65;
+
+ c = c/2;
+
+ explict Coercion
+ c = string(c);
+
+ d = number(d);
+
+
+//In JS variables do not have types
+// the value has the typo. 
+
