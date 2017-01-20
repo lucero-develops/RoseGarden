@@ -1,22 +1,31 @@
-a = 42;
+var a = 10;
 
-//your assigning to a variable that has never been foramlly 
-//declared , this is a really bad idea 
-// every variable you use in your program should been formally
-//declared before the first time you use it 
+if (a > 5) {
+	a = a * 2;
+}
 
-// var a;
-// a = 42;
-// same as 
+//there are curtain expression
+//that would not result in true or false by themselves
+// if(a)  , the if statement is expecting a true or false
+//if not it has to convert 
 
-var a = 42; 
-//dont houst,  var is function scooping defs
+/*falsy:
+0 -0 NaN 
+""
+falsy
+null
+undefined
 
-//block scooping definantions
-let b = 2;
-const c = 43;
+so memorize this list and if its on the falsy list its 
+truthy 
 
+example */
 
-function a(){}
+var b  = 0;
 
-//These are the four ways to declare variable
+if (b) {
+	b = b * 3;
+}
+
+/* b is falsy because its in the falsy list , so our 
+if statment reads "if false" not "if true"
