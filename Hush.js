@@ -1,8 +1,5 @@
-a =2 is an assignment expression
-the result of that is the valued is was
-assigned.
+//writing a quick prompt
 
-the Java script engine just does an assignment
-
-Console does that and says whatever the value is 
+var age = prompt("How young are you?")
+console.log(age);
 
