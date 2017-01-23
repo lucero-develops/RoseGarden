@@ -1,27 +1,16 @@
-/*
-Primitive data types
+/*Control Flow 
 
-String
-Number
-Boolean
-Null
-Undefined
+Ask a question and print out a responsing 
+Tell the user if the are right or wrong 
+*/
 
-A value type, tells us what kind of "thing" it is
+var answer = prompt("What is the capital of New York?");
 
-2 + "2";
-result is a string.
+if (answer ==="Albany"){
+	alert("You are correct");
+}
+	else{
+		alert("Sorry," + "" "is not correct.");
 
-10 > 2: 
-Result: true
-
-***Use the typeof() to found what the data type of a value is 
-
-type of(10 < 2)
-boolean
-true and false are cold boolean data types
-
-
-Null means "a value does not exist"
-
-
+		
+}
