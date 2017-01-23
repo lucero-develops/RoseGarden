@@ -1,37 +1,49 @@
 /*
 
-Java script revolves around objects
+When you write code ina browser
+it becomes part of the 
+global window object.
 
--Take a thing (object)
+When something is global it means all code can access, change
+and use it 
 
--Describe the thing
-   Characteristics: properties
-   Actions: methods
+Be careful about creating anything that 
+is global in scope
 
-There are 2 main ways to creating objects
-object literal
+**When we create a variable inside of a function
+it CAN"T be accessed from code outside the function. 
+Why?  Because it's scope is "local" to that function, meaning
+it is invisisble to any other code other than the other code
+inside of that function 
 
-object constructor
+*/
 
-3 different kinds of objects
+var example = "value";
+//this is a global variable
 
-Host objects
-	are objects defined by the enviroment 
-	in which your code is run
-	example: webrowser(console, node, event, window, etc)
+function alertExample(){
+	alert(example);
+	var anotherExample = "?";
 
-Core objects
-	are objects defined by and built into the 
-	Java Script lanuage itself
-	example (Math, date, number, string, boolean)
+}
 
-All other objects are defiend by the coder as needed
+alertExample();
+//This prints 'value' in a alert .
 
+/* so yes our global code is avaiable
+inside of functions, and in fact,
+it accessible from anywhere in our code.
 
+That way it's really important to understand when
+your code is global
+*/
 
+alert(anotherExample);
+/*
 
-
-
+In Java script, new scopes are created 
+everytime we create a new function,so it
+has function-based scope.
 
 
 
