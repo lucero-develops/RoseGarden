@@ -34,9 +34,15 @@ var randomNumber = Math.round(Math.random()*5);
 console.log(randomNumber);
 
 if(randomNumber%3===0  && randomNumber !=0){
-	alert("fizz");
+	//this was added 
+	if(randomNumber%5===0){
+		alert("FizzBuzz");
+	}
+	else{
+		alert("fizz");		
+	}
 }
-else if(randomNumber%5===0 && randomNumber !=0{
+else if(randomNumber%5===0 && randomNumber !=0){
 	alert("buzz");
 }
 else{
@@ -45,4 +51,17 @@ else{
 
 //code has defect , prints fizz when value is 0
 //  != can be used to solve this 
+
+/*
+add alert "FizzBuzz!" when random number
+is divisible by 3 and 5 , must increase
+random number range to make fizzbuzz  happen 
+
+else if(randomNumber%3===0 && randomNumber%5===0){
+	alert("FizzBuzz")
+}
+
+
+This try function currectly 
+
 
