@@ -1,32 +1,39 @@
-/* Let's Do Something
+// Meet Therapy, the Java Script Care Robot!
 
-Another type of loop is the do...while. 
-It executes once and continues as long as the 
-specified condition is still true.
-
-Useful for when you don't know how many times
- you need your loop to run 
+/* A confirm pop up returns a boolean value(true or false)
+	- if "ok" is clicked, it returns true
+	- if "cancel" is clicked, it returns no
 */
 
-//do... while loop
-//printing the number 1-10
-var i = 0;
-do{
-	console.log(i);
-	i++;
+var sad = confirm("Would you like to be cheere up?");
+
+//This is the same as saying while (sad === true)
+while (sad) {
+	alert("What do you call a boomerang that doesn't come back? .... A stick!");
+	var yes = confirm("would you like to continue our session?");
+
+	if(yes){
+		var response = prompt("tell me about your troubles: ", "type your feelings here");
+
+		if(response){
+			alert("I am sorry you are feeling that way. Keep pushing forward");
+			sad = false;
+		}
+		else{
+			sad = false;
+		}
+	}
 }
-	while( i<11);
-//do while will always run atleast once 
-//
 
 
-//While loop
-var i = 0;
-while(i<11){
-	console.log(i);
-	i++
+
+/*
+Another Example:
+
+var userLoggedIn = false;
+
+while(userLoggedIn){
+	//display login info
 }
-//while loop , checking the condition first , if imediate false
-//code will never run 
 
-//For loops are useful when you know how many times you need your loop to run 
+*/
