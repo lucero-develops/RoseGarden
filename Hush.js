@@ -1,25 +1,27 @@
-/*
-Print all numbers from 1 to 100 with three exceptions:
+/* Let's Do Something
 
-	-if the number is divisible by 3, print fizz
-	-if the number is divisible by 5, print buzz
-	-if the number is divisible by 3 AND 5 , print FizzBuzz
+Another type of loop is the do...while. 
+It executes once and continues as long as the 
+specified condition is still true.
 
+Useful for when you don't know how many times
+ you need your loop to run 
 */
 
-for(var i=1; i<=100; i++){
-	if(i%3 === 0){
-		if(i%5 === 0){
-			console.log("FizzBuzz");
-		}
-		else{
-			console.log("fizz");
-		}
-	}
-	else if(i%5 ===0){
-		console.log("buzz");
-	}
-	else {
-		console.log(i);
-	}
+//do... while loop
+//printing the number 1-10
+var i = 0;
+do{
+	console.log(i);
+	i++;
 }
+	while( i<11);
+
+
+//While loop
+var i = 0;
+while(i<11){
+	console.log(i);
+	i++
+}
+
