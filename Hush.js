@@ -33,12 +33,16 @@ var randomNumber = Math.round(Math.random()*5);
 
 console.log(randomNumber);
 
-if(randomNumber%3===0){
+if(randomNumber%3===0  && randomNumber !=0){
 	alert("fizz");
 }
-else if(randomNumber%5===0){
+else if(randomNumber%5===0 && randomNumber !=0{
 	alert("buzz");
 }
 else{
 	console.log(randomNumber);
 }
+
+//code has defect , prints fizz when value is 0
+//  != can be used to solve this 
+
