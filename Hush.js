@@ -16,6 +16,8 @@ do{
 	i++;
 }
 	while( i<11);
+//do while will always run atleast once 
+//
 
 
 //While loop
@@ -24,4 +26,7 @@ while(i<11){
 	console.log(i);
 	i++
 }
+//while loop , checking the condition first , if imediate false
+//code will never run 
 
+//For loops are useful when you know how many times you need your loop to run 
