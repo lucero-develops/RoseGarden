@@ -1,16 +1,15 @@
 /*
-Creating a Java script file from Scratch
 
-the index.html you could load the script tag
-in the <head> but its is recommended to add your
-<script> right before the closing <body> tag
+Planning a project :
 
-The reason for this is because our code is read from top to bottom 
-by the browser, it will render everthing else on the page before it loads
-our scripts , which makes the page load much faster 
-add in addition if there are any errors in our Java script file
-its going to render the content before the running the script
+1. What do you want to make?:
 
+2. Whats steps do you think are necessary?
 
+3. What syntax or coding patterns might you use?
 
-<script src ="js/main.js" type="text/javascript"></script>
+Reminder : There are many ways to create things with code!
+The most important part is to write it and get it working.
+If you can't get something to work, try making it simpler.
+After, look for ways you might improve your code
+
