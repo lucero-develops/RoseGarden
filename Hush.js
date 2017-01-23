@@ -1,28 +1,29 @@
-/* Functions intro
+//Function practice
+//Calculate the area of a square
 
-*/
-var name = "Michael";
-console.log("Oh hi" + name);
+function CalculateArea(){
+	console.log(side * side);
 
-var name2 = "Lisa";
-console.log("Oh hi" + name);
-
-var name3 = "Steve";
-console.log("Oh hi" + name);
-
-//if you are repeating the same action 
-//over and over , it can get very tedious
-//writing the same lines of code 
-
-function sayHello(name){
-	console.log("Oh hi" + name);
 }
-sayHello("Michael");
-sayHello("Steve");
 
-/*
-Code is much cleaner and simplier with the use of functions
-*/
+CalculateArea(5);
+// 25
 
+//Caculate the area of a rectangle 
+function CalculateArea(side1,side2){
+	console.log(side1 * side2);
+}
 
+CalculateArea(10,40);
+//400
+
+//Functions don't have to have parameters
+
+//create a function that generates a random number
+
+function randomNumber(){
+	console.log(Math.random());
+}
+
+randomNumber();
 
