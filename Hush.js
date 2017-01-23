@@ -1,22 +1,16 @@
 /*
-Looping over an array
+Creating a Java script file from Scratch
 
-*/
+the index.html you could load the script tag
+in the <head> but its is recommended to add your
+<script> right before the closing <body> tag
 
-var friends =["Steve","Anthony","Eric","Neil","Nick","Cam"];
+The reason for this is because our code is read from top to bottom 
+by the browser, it will render everthing else on the page before it loads
+our scripts , which makes the page load much faster 
+add in addition if there are any errors in our Java script file
+its going to render the content before the running the script
 
-//for(init_loop; condition; update to the loop
 
-function greetFriends(){
-	for(var i=0; i  friends.length; i++){
-		console.log("Oh hi " + friends[i]);
-	}
-}
 
-greetFriends();
-// "Oh hi Steve"
-// "Oh hi Anthony"
-// "Oh hi Eric"
-// "Oh hi Neil"
-// "Oh hi Nick"
-// "Oh hi Cam"
+<script src ="js/main.js" type="text/javascript"></script>
