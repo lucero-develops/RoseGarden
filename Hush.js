@@ -1,15 +1,35 @@
 /*
+Objects
 
-Planning a project :
+An object is a collection of properties,
+which are described in the form
+of key/value pairs.
 
-1. What do you want to make?:
+***We can use objects to model "things" using code.
 
-2. Whats steps do you think are necessary?
+*/
 
-3. What syntax or coding patterns might you use?
+var coffeeFlavor = "black";
+var coffeeTemperature = "hot";
+var coffeeOunces= 8;
+var coffeeMilk = false;
 
-Reminder : There are many ways to create things with code!
-The most important part is to write it and get it working.
-If you can't get something to work, try making it simpler.
-After, look for ways you might improve your code
+var myCoffee = {
+	flavor: "black",
+	temperature: "hot",
+	ounces: 8;
+	milk: false
+	// you leave off the  on the last value
+	//because the trailing comma causes an error on
+	//older browsers
+};
+
+//What if we want to talk about the properties we
+//added in our object.   We can use dot notation
+//to refernce anything inside our object 
+
+alert(myCoffee.flavor);
+//alert box with result "black"
+
+
 
