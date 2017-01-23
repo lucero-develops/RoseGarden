@@ -1,23 +1,44 @@
-//Using if else
+/*
+FizzBuzz is a common coding exercise that is well known as a coding 
+question asked in interviews that is designed to filter of candidates
 
-var answer = prompt("What is the capital of New York?");
+Let's try a modified version
 
-if (answer ==="Albany"){
-	alert("You are correct");
+Generate a random number between 0 aand 5. If the result is
+devisible by 3 alert "fizz". If the number is divisible by 5,
+alert "buzz", otherwise print the number to the console.
+*/
+
+/* My attempt
+var randomNumber = math.randomNumber(0,5);
+
+var fizz = randomNumber % 3
+
+var buzz = randomNumber % 5
+
+if (fizz ===0){
+	alert("fizz");
+}
+else if(buzz===0){
+	alert("buzz":)
 }
 else{
-		alert("Sorry," + "" "is not correct.");
+	console.log("randomNumber")
 }
+*/
 
-var favAnimal = prompt("What is your favorite animal? ")
+//Solution
 
-if(favAnimal ==="dog"){
-	alert("Dogs are awesome!");
+var randomNumber = Math.round(Math.random()*5);
+
+console.log(randomNumber);
+
+if(randomNumber%3===0){
+	alert("fizz");
 }
-else if (favAnimal ==="cat"){
-	alert("cats are ok.");
+else if(randomNumber%5===0){
+	alert("buzz");
 }
 else{
-	alert("Nice choice!");
+	console.log(randomNumber);
 }
-
