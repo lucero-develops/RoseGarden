@@ -1,67 +1,24 @@
 /*
-FizzBuzz is a common coding exercise that is well known as a coding 
-question asked in interviews that is designed to filter of candidates
-
-Let's try a modified version
-
-Generate a random number between 0 aand 5. If the result is
-devisible by 3 alert "fizz". If the number is divisible by 5,
-alert "buzz", otherwise print the number to the console.
+Let's create a text adventure game with JavaScript.
+Let's set a senario in which we encounter a zombie,
+choose a weapon to fight the zombie with,
+and have a 50/50 chance of ethier defeating the zombie with 
+our weapon or getting bitten and losing the game.
 */
 
-/* My attempt
-var randomNumber = math.randomNumber(0,5);
+alert("This is a zombie attack, you for was searching " +
+	"for food but found a zombie !");
+var weapon = prompt("Look for a weapon ! There is " +
+	"a bow and arrow, an axe, or a rubber chicken?");
+var randomNumber = Math.round(Math.random());
 
-var fizz = randomNumber % 3
+alert("you attacked the zombie with your" + "" + weapon);
 
-var buzz = randomNumber % 5
-
-if (fizz ===0){
-	alert("fizz");
+if(randomNumber ===0){
+	alert("The zombie bites you. You lose!!!");
 }
-else if(buzz===0){
-	alert("buzz":)
+else if(randomNumber===1){
+	alert("You killed the zombie with your" +
+		weapon + ". You Win!");
 }
-else{
-	console.log("randomNumber")
-}
-*/
-
-//Solution
-
-var randomNumber = Math.round(Math.random()*5);
-
-console.log(randomNumber);
-
-if(randomNumber%3===0  && randomNumber !=0){
-	//this was added 
-	if(randomNumber%5===0){
-		alert("FizzBuzz");
-	}
-	else{
-		alert("fizz");		
-	}
-}
-else if(randomNumber%5===0 && randomNumber !=0){
-	alert("buzz");
-}
-else{
-	console.log(randomNumber);
-}
-
-//code has defect , prints fizz when value is 0
-//  != can be used to solve this 
-
-/*
-add alert "FizzBuzz!" when random number
-is divisible by 3 and 5 , must increase
-random number range to make fizzbuzz  happen 
-
-else if(randomNumber%3===0 && randomNumber%5===0){
-	alert("FizzBuzz")
-}
-
-
-This try function currectly 
-
 
