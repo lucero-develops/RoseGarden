@@ -1,22 +1,22 @@
 /*
-Arrays stores list of values
+Looping over an array
+
 */
 
-var friends =["Steve","Ross","Devin"];
+var friends =["Steve","Anthony","Eric","Neil","Nick","Cam"];
 
-//console.log(friends[1]);
-//prints "Ross"
-// the array position always starts are zero
+//for(init_loop; condition; update to the loop
 
-//console.log(friends[2]);
-//prints "Devin"
+function greetFriends(){
+	for(var i=0; i  friends.length; i++){
+		console.log("Oh hi " + friends[i]);
+	}
+}
 
-friends[3] = "Chris";
-//add "chris"to array list 
-
-//array commands
-friends.push("Tom");
-//automatically add "Tom" to the last position in the array 
-
-
-
+greetFriends();
+// "Oh hi Steve"
+// "Oh hi Anthony"
+// "Oh hi Eric"
+// "Oh hi Neil"
+// "Oh hi Nick"
+// "Oh hi Cam"
