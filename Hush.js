@@ -1,39 +1,28 @@
-// Meet Therapy, the Java Script Care Robot!
+/* Functions intro
 
-/* A confirm pop up returns a boolean value(true or false)
-	- if "ok" is clicked, it returns true
-	- if "cancel" is clicked, it returns no
 */
+var name = "Michael";
+console.log("Oh hi" + name);
 
-var sad = confirm("Would you like to be cheere up?");
+var name2 = "Lisa";
+console.log("Oh hi" + name);
 
-//This is the same as saying while (sad === true)
-while (sad) {
-	alert("What do you call a boomerang that doesn't come back? .... A stick!");
-	var yes = confirm("would you like to continue our session?");
+var name3 = "Steve";
+console.log("Oh hi" + name);
 
-	if(yes){
-		var response = prompt("tell me about your troubles: ", "type your feelings here");
+//if you are repeating the same action 
+//over and over , it can get very tedious
+//writing the same lines of code 
 
-		if(response){
-			alert("I am sorry you are feeling that way. Keep pushing forward");
-			sad = false;
-		}
-		else{
-			sad = false;
-		}
-	}
+function sayHello(name){
+	console.log("Oh hi" + name);
 }
-
-
+sayHello("Michael");
+sayHello("Steve");
 
 /*
-Another Example:
-
-var userLoggedIn = false;
-
-while(userLoggedIn){
-	//display login info
-}
-
+Code is much cleaner and simplier with the use of functions
 */
+
+
+
