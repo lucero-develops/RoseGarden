@@ -1,29 +1,22 @@
-//Function practice
-//Calculate the area of a square
+/*
+Arrays stores list of values
+*/
 
-function CalculateArea(){
-	console.log(side * side);
+var friends =["Steve","Ross","Devin"];
 
-}
+//console.log(friends[1]);
+//prints "Ross"
+// the array position always starts are zero
 
-CalculateArea(5);
-// 25
+//console.log(friends[2]);
+//prints "Devin"
 
-//Caculate the area of a rectangle 
-function CalculateArea(side1,side2){
-	console.log(side1 * side2);
-}
+friends[3] = "Chris";
+//add "chris"to array list 
 
-CalculateArea(10,40);
-//400
+//array commands
+friends.push("Tom");
+//automatically add "Tom" to the last position in the array 
 
-//Functions don't have to have parameters
 
-//create a function that generates a random number
-
-function randomNumber(){
-	console.log(Math.random());
-}
-
-randomNumber();
 
