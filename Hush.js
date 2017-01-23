@@ -1,35 +1,40 @@
 /*
-Objects
-
-An object is a collection of properties,
-which are described in the form
-of key/value pairs.
-
-***We can use objects to model "things" using code.
-
+Methods
+when an object has a property with a 
+function as the value, it is referred to 
+as a METHOD of that object
 */
 
-var coffeeFlavor = "black";
-var coffeeTemperature = "hot";
-var coffeeOunces= 8;
-var coffeeMilk = false;
 
 var myCoffee = {
 	flavor: "black",
 	temperature: "hot",
-	ounces: 8;
-	milk: false
+	ounces: 8,
+	milk: false,
+
+	reheat: function(){
+		if(myCoffee.temperature === "cold"{
+			myCoffee.temperature = "hot";
+			alert("Your coffee has been reheated");
+		}
+	}
 	// you leave off the  on the last value
 	//because the trailing comma causes an error on
 	//older browsers
 };
 
-//What if we want to talk about the properties we
-//added in our object.   We can use dot notation
-//to refernce anything inside our object 
+myCoffee.temperature = "cold";
+// myCoffee["temperature"] = "lukewarm";
+// another way to assign a value besides dot notation
 
-alert(myCoffee.flavor);
-//alert box with result "black"
+myCoffee.reheat();
+
+//
+
+
+
+
+
 
 
 
