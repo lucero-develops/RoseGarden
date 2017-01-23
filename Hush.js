@@ -1,40 +1,32 @@
 /*
-What if we want to create multiple instances of an object?
 
-We can create something called an "object constructor",
-in which we use a function to create multiple
-instances of an object.
+Java script revolves around objects
 
-Each instance inherits the properties and methods
-of its constructor
+-Take a thing (object)
 
- */
+-Describe the thing
+   Characteristics: properties
+   Actions: methods
 
-var steve = {
-	name: "Steve";
-	tshirtColor: "green"
-};
+There are 2 main ways to creating objects
+object literal
 
-var mike = {
-	name: "Mike";
-	tshirtColor: "red"
-};
+object constructor
 
-function Friend(name, tshirtColor) {
-	this.name = name;
-	this.tshirtColor = tshirtColor;
+3 different kinds of objects
 
-}
+Host objects
+	are objects defined by the enviroment 
+	in which your code is run
+	example: webrowser(console, node, event, window, etc)
 
-var steve = new Friend("Steve", "green");
-var mike = new Friend("Mike", "red");
+Core objects
+	are objects defined by and built into the 
+	Java Script lanuage itself
+	example (Math, date, number, string, boolean)
 
-alert(steve.name);
-//"Steve"
+All other objects are defiend by the coder as needed
 
-// You get the same result as our object literal but
-// but we now can use the "Friend" object as many 
-//times as we want and avoid any kind of repetition in our code 
 
 
 
