@@ -1,16 +1,23 @@
-/*Control Flow 
-
-Ask a question and print out a responsing 
-Tell the user if the are right or wrong 
-*/
+//Using if else
 
 var answer = prompt("What is the capital of New York?");
 
 if (answer ==="Albany"){
 	alert("You are correct");
 }
-	else{
+else{
 		alert("Sorry," + "" "is not correct.");
-
-		
 }
+
+var favAnimal = prompt("What is your favorite animal? ")
+
+if(favAnimal ==="dog"){
+	alert("Dogs are awesome!");
+}
+else if (favAnimal ==="cat"){
+	alert("cats are ok.");
+}
+else{
+	alert("Nice choice!");
+}
+
